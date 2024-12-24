@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 100vh;          
+    margin: 0;              
+    background-color: #DFF2EB;
+}
+
+.card {
+    width: 1000px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color:  #2b3e50;;
+    text-align: center;
+}
+.text{
+    color: white;
+    font-size: large;
+}
+
+#button{
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+    font-weight: 700;
+    background-color: #7AB2D3;
+    border: 0;
+    font-family: sans-serif;
+    font-size: medium;
+    color: white;
+}
+
+#Title{
+    margin-left:50px;
+}
+
+#Description{
+    margin-left: 10px;
+}
+
+h2{
+    font-weight: bold;
+    color: white;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskHive</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script>
+        // JavaScript function to handle button click
+        function handleAddTask() {
+            window.location.href = "/addTask";
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"> TASKHIVE</div>
+        <input type="submit"  onclick="handleAddTask()" name="submit_button" value="Add Task" class="button">
+    </nav>
+
+    {% for row in data%}
+    <div class="box">
+        <h2 class="headtext">{{row[1]}}</h2>
+        <p class="text">{{row[2]}}</p>
+        {%if row[3]==1%}
+        <h6 class="text">👍--task Completed</h6>
+        {%else%}
+        <h6 class="text">❌--not Completed</h6>
+        {%endif%}
+        <div class="button-box">
+            <form action="{{ url_for('update', task_id=row[0]) }}" method="POST">
+                <input type="submit"  value="Update" name="update" id="update" class="btn update-btn">
+            </form>
+            <form action="{{ url_for('delete', task_id=row[0]) }}" method="POST">
+                <input type="submit" value="Delete" name="delete" id="delete" class="btn delete-btn">
+            </form>
+        </div>
+    </div>
+    {%endfor%}
+</body>
+</html>

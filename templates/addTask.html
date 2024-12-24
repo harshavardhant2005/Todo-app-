@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Todo Application</title>
+    <link rel="stylesheet" href="../static/addTask.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Add your Task</h2>
+            <form action="addTask" method="POST">
+                <label for="title" class="text" >Title Of Task</label>
+                <input type="text" title="Title" name="Title" id="Title"  required>
+                <br>
+                <label for="Description" class="text">Description of Task</label>
+                <input type="text" title="Description" name="Description" id="Description" required>
+                <br>
+                <br>
+                <input type="submit" value="submit" id="button">
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
