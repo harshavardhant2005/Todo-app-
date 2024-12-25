@@ -1,4 +1,4 @@
-# To-Do App with Python Flask and SQLite
+# To-Do App with Python Flask and SQLite3 DB
 
 ## Overview
 This is a simple yet functional To-Do application built using the Python Flask framework and SQLite database. The app provides a clean and intuitive user interface for managing tasks, enabling users to create, view, update, and delete tasks effortlessly. It is a great example of a CRUD (Create, Read, Update, Delete) application designed for learning or small-scale task management.
